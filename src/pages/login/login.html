@@ -1,0 +1,67 @@
+<ion-content class="body">
+
+  <div class="container pers100">
+    <div class="card" [class.hidden]="hiddenCard == 1" (click)="hiddenCard = 2">
+      <h1>Sign in</h1>
+      <div class="content">
+        <ion-list class="list">
+          <ion-item>
+            <ion-label stacked>Email</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+          <p (click)="password()">Forgot Password?</p>
+          <div class="S-button">
+            <button ion-button round full (click)="next()">
+              Sign In
+            </button>
+          </div>
+          <h3 (click)="signUp()">Sign UP</h3>
+
+        </ion-list>
+      </div>
+    </div>
+    <div class="card" [class.hidden]="hiddenCard == 2" (click)="hiddenCard = 1">
+      <h1>pin code</h1>
+      <div class="content">
+
+        <div class="calculator">
+
+          <input type="password" [(ngModel)]="pincode" class="screen btn">
+
+          <div class="calculator-buttons">
+            <button class="calc-button" (click)="btnClicked($event)">7</button>
+            <button class="calc-button" (click)="btnClicked($event)">8</button>
+            <button class="calc-button" (click)="btnClicked($event)">9</button>
+
+            <button class="calc-button" (click)="btnClicked($event)">4</button>
+            <button class="calc-button" (click)="btnClicked($event)">5</button>
+            <button class="calc-button" (click)="btnClicked($event)">6</button>
+
+            <button class="calc-button" (click)="btnClicked($event)">1</button>
+            <button class="calc-button" (click)="btnClicked($event)">2</button>
+            <button class="calc-button" (click)="btnClicked($event)">3</button>
+
+            <button class="calc-button" (click)="erase()">Clear</button>
+            <button class="calc-button" (click)="btnClicked($event)">0</button>
+            <button class="calc-button" (click)="next()">Ok</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="finger-print">
+    <ion-icon name="finger-print" (click)="login()"></ion-icon>
+  </div>
+
+
+
+
+</ion-content>

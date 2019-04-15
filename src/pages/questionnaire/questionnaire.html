@@ -1,0 +1,71 @@
+
+
+<ion-content class="body" >
+
+  <!--class="step"-->
+<!-->[ngClass]="{'step done': id === 1 }"-->
+  
+<ion-list no-lines radio-group [(ngModel)]="autoManufacturers">
+<ion-item >
+    <h1 class="title">QUESTIONNAIRE</h1>
+  </ion-item>
+  <ion-item class="Progress-Style">
+    <div class="progress">
+  <div [class]="step1">
+    <div class="step-progress"></div>
+    <div class="icon-wrapper">
+      <svg class="icon icon-checkmark" viewBox="0 0 32 32"><path class="path1" d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>  </svg>
+      <div class="step-text">Rent</div>
+    </div>
+  </div>
+  <div [class]="step2">
+    <div class="step-progress"></div>
+    <div class="icon-wrapper">
+      <svg class="icon icon-checkmark" viewBox="0 0 32 32"><path class="path1" d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>  </svg>
+      <div class="step-text">Shopping</div>
+    </div>
+  </div>
+  <div [class]="step3">
+    <div class="step-progress"></div>
+    <div class="icon-wrapper">
+      <svg class="icon icon-checkmark" viewBox="0 0 32 32"><path class="path1" d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>  </svg>
+      <div class="step-text">Others</div>
+    </div>
+  </div>
+  <div [class]="step4">
+    <div class="icon-wrapper">
+      <svg class="icon icon-checkmark" viewBox="0 0 32 32"><path class="path1" d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>  </svg>
+      <div class="step-text">DONE!</div>      
+    </div>
+  </div>
+</div>
+  </ion-item>
+  <ion-item class="Ques-Style">
+    <ion-label class="Label-Style">{{title1}}</ion-label>
+    <ion-radio class="Radio-Style" value="cord"></ion-radio>
+  </ion-item>
+
+  <ion-item class="Ques-Style">
+    <ion-label class="Label-Style">{{title2}}<br>{{title2_2}}</ion-label>
+    <ion-radio class="Radio-Style" value="duesenberg"></ion-radio>
+  </ion-item>
+
+  <ion-item class="Ques-Style">
+    <ion-label class="Label-Style">{{title3}}<br>{{title3_2}}</ion-label>
+    <ion-radio class="Radio-Style" value="hudson"></ion-radio>
+  </ion-item>
+  
+  <ion-item class="Button-item">
+    <ion-grid style="margin:0 3px">
+      <ion-row>
+      <ion-col>
+        <button class="Button-Style" ion-button round full (click)="back()" color="blueCiel">Back</button>
+      </ion-col>
+      <ion-col>
+        <button class="Button-Style" ion-button round full color="blueCiel" (click)="MyFunction()">Next</button>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-list>
+</ion-content>

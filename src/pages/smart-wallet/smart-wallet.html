@@ -1,0 +1,97 @@
+<ion-content>
+
+    <div class="header">
+        <ion-item style="background-color:transparent" no-lines>
+            <ion-label class="title">SmartWallet</ion-label>
+            <ion-toggle checked="true" [(ngModel)]="hidden" (ionChange)="Alert()"></ion-toggle>
+        </ion-item>
+    </div>
+
+    <ion-slides *ngIf="hidden" #slides style="position:relative; top:10%; width: 100%; display:inline-block" (ionSlideWillChange)="slideChanged($event)">
+      <ion-slide>
+          <ion-card class="body">
+            <div style="width:100%">
+              <ion-row style="height:100%; align-items:center">
+                <ion-col >
+                  <div class="vert">
+                    <h3 >Left</h3>
+                    <h4 style="color: green;font-size:15px; font-weight: 600">8.987,00 MAD</h4>
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                      <h3 >Spent</h3>
+                      <h4 style="color: red;font-size:15px; font-weight: 600">1.987,00 MAD</h4>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card>
+
+          <div style="position:absolute; width:100%; top:25%;">
+              <ion-list class="items" no-lines>
+
+                  <ion-item *ngFor="let item of items">
+                    <ion-icon name="card" item-start></ion-icon>
+                    <!-- <h2>{{item}}</h2> -->
+                    <h2>Rent</h2>
+                    <div class="montant-droit" item-end>
+                      <h3>350 DH</h3>
+                    </div>
+                  </ion-item>
+
+
+                  <ion-item>
+                      <ion-icon name="card" item-start></ion-icon>
+                      <h2>Shopping</h2>
+                      <div class="montant-droit" item-end>
+                        <h3>250.00 MAD</h3>
+                      </div>
+                    </ion-item><ion-item>
+                        <ion-icon name="card" item-start></ion-icon>
+                        <h2>Insurance</h2>
+                        <div class="montant-droit" item-end>
+                          <h3>150.00 MAD</h3>
+                        </div>
+                      </ion-item>
+    
+              </ion-list>
+          </div>
+
+
+      </ion-slide>
+      <ion-slide>
+        second slide here
+      </ion-slide>
+    </ion-slides>
+
+
+    <div class="bottom-sec">
+      <div class="bottom-content" *ngIf="show_bottom_sec">
+
+          <!-- <ion-list class="bottom-items"  no-lines>
+
+              <ion-item *ngFor="let item of items">
+                <h2 >{{item}}</h2>
+              </ion-item>
+              <ion-item>
+                  <h2>Maison</h2>
+              </ion-item>
+              <ion-item>
+                  <h2>Assurance</h2>
+              </ion-item>
+
+              <ion-item style="background-color:orangered!important" (click)="addCat()">
+                <h2>+</h2>
+            </ion-item>
+
+          </ion-list> -->
+
+
+      </div>
+      <button class="bottom-btn" [class.active]="show_bottom_sec" (click)="addCat()">+</button>
+    </div>
+
+
+  
+</ion-content>

@@ -1,0 +1,62 @@
+<!-- <ion-header >
+  <ion-navbar class="header">
+    <ion-title class="title2">
+      <span class="Span_title">Rendez-vous <ion-icon end class="Icon_title" name="md-arrow-back"></ion-icon></span>
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header> -->
+
+<div class="header">
+    <ion-item style="background-color:transparent" no-lines>
+        <ion-label class="title" text-center>Appointment<ion-icon class="Icon_title" name="md-arrow-back" (click)="back()"></ion-icon></ion-label>
+    </ion-item>
+</div>
+
+
+<ion-content >
+  <ion-list >
+    <ion-item-sliding (ionSwipe)="remove(item)">
+      <ion-item class="main_item" *ngFor="let item of items; let id = index">
+        <ion-grid class="main_grid">
+          <ion-row class="row_main">
+            <ion-col class="colLeft">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <span class="headerItem" [innerHTML]="item"></span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <span class="buttomItem">1h 30 min</span>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-col>
+            <ion-col class="colRight">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <span class="headerItem">Bank</span>
+                  </ion-col>
+                  <ion-col id="Spec_col">
+                    <span class="sidItem">MON 15/2018</span>
+                  </ion-col>
+                </ion-row>
+                  <ion-row>
+                  <ion-col>
+                    <span class="buttomItem">187، P2002, Casablanca </span>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item-options>
+      <button ion-button  color="danger" (click)="remove(id)">Delete</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

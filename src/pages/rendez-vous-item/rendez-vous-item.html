@@ -1,0 +1,171 @@
+<!-- <ion-header >
+  <ion-navbar class="header">
+    <ion-title class="title2">
+      <span class="Span_title">Rendez-vous <ion-icon end class="Icon_title" name="md-arrow-back"></ion-icon></span>
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header> -->
+
+<div class="header">
+    <ion-item style="background-color:transparent" no-lines>
+        <ion-label class="title" text-center>Appointment<ion-icon end class="Icon_title" name="md-arrow-back" (click)="back()"></ion-icon></ion-label>
+    </ion-item>
+</div>
+
+<ion-content class="Content_style" padding>
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+        <ion-slides>
+          <ion-slide style="position:relative; top: 15%">
+              <ion-grid>
+                <ion-row class="Row_Style">
+                  <ion-col id="colDay">
+                    <ion-row class="row_item">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">MON</span></button></ion-col>
+                    </ion-row>
+                    <ion-row class="row_item_2">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">11</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row class="row_item">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">TUE</span></button></ion-col>
+                    </ion-row>
+                    <ion-row class="row_item_2">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">12</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row class="row_item">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">WED</span></button></ion-col>
+                    </ion-row>
+                    <ion-row class="row_item_2">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">13</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row class="row_item">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">THU</span></button></ion-col>
+                    </ion-row>
+                    <ion-row class="row_item_2">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">14</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row class="row_item">
+                      <ion-col id="colDay2"><button class='hidden-button3' ion-button><span class="SpanTop">FRI</span></button></ion-col>
+                    </ion-row>
+                    <ion-row class="row_item_2">
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">15</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </ion-slide>
+
+          <ion-slide >
+          <ion-grid>
+                <ion-row class="Row_Style">
+                  <ion-col>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">SAT</span></button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">16</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">SUN</span></button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">17</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">MON</span></button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">18</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">TUE</span></button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">19</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanTop">WED</span></button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col ><button class='hidden-button3' ion-button><span class="SpanBottom">20</span></button></ion-col>
+                    </ion-row>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </ion-slide>
+    </ion-slides>
+    </ion-col>
+  </ion-row>
+  <ion-row class="Row_Hour">
+    <ion-col class="Col_hour">
+     <button class='hidden-button' color="gray" (click)="function1()" ion-button>
+    <div [class]="left">
+    <p class="Parag1">Hour</p>
+    <ion-label class="Parag2">{{houre}}</ion-label>
+    </div>
+    </button>
+    </ion-col>
+    <ion-col class="Col_hour">
+    <button class='hidden-button' color="gray" ion-button (click)="function2()">
+    <div [class]="right">
+    <p class="Parag1">Minute</p>
+    <ion-label class="Parag2">{{minute}}</ion-label>
+    </div>
+    </button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="rowAppTop">
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('09 AM')" [disabled]="booleanHoure"><span class="spanApp" >09 AM</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('10 AM')" [disabled]="booleanHoure"><span class="spanApp" >10 AM</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('11 AM')" [disabled]="booleanHoure"><span class="spanApp" >11 AM</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('12 AM')" [disabled]="booleanHoure"><span class="spanApp" >12 AM</span></button></ion-col>
+  </ion-row>
+  <ion-row class="rowApp">
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('01 AM')" [disabled]="booleanHoure"><span class="spanApp" >01 PM</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('02 AM')" [disabled]="booleanHoure"><span class="spanApp" >02 PM</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('03 AM')" [disabled]="booleanHoure"><span class="spanApp" >03 PM</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorHoure('04 AM')" [disabled]="booleanHoure"><span class="spanApp" >04 PM</span></button></ion-col>
+  </ion-row>
+  <ion-row class="rowApp">
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('10 Min')" [disabled]="booleanMinute"><span class="spanApp" >10 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('15 Min')" [disabled]="booleanMinute"><span class="spanApp" >15 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('20 Min')" [disabled]="booleanMinute"><span class="spanApp" >20 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('25 Min')" [disabled]="booleanMinute"><span class="spanApp" >25 Min</span></button></ion-col>
+  </ion-row>
+  <ion-row class="rowApp">
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('30 Min')" [disabled]="booleanMinute"><span class="spanApp">30 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('35 Min')" [disabled]="booleanMinute"><span class="spanApp">35 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('40 Min')" [disabled]="booleanMinute"><span class="spanApp">40 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('45 Min')" [disabled]="booleanMinute"><span class="spanApp">45 Min</span></button></ion-col>
+  </ion-row>
+  <ion-row class="rowAppBottom">
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('50 Min')" [disabled]="booleanMinute"><span class="spanApp">50 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('55 Min')" [disabled]="booleanMinute"><span class="spanApp">55 Min</span></button></ion-col>
+    <ion-col class="colApp"><button class='hidden-button2' ion-button color="gray" (click)="onItemSelectorMinute('00 Min')" [disabled]="booleanMinute"><span class="spanApp">00 Min</span></button></ion-col>
+    <ion-col class="colAppSpe"><span></span></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col id="buttonPrendre">
+      <button  ion-button round (click)="PushItem()">Take An Appointment</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

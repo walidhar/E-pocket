@@ -1,0 +1,82 @@
+<ion-content>
+
+
+  
+  <div class="header">
+
+      <ion-item style='background-color: transparent; padding: 10px 10px 10px 20px' no-lines>
+          <ion-avatar item-left >
+            <img src="../../assets/imgs/Luis.png">
+          </ion-avatar>
+          <div class="infos">
+              <h2>Luis Quintero</h2>
+              <p>0567894321</p>
+          </div>
+          <ion-icon name="settings" end (click)="edit()"></ion-icon> 
+    </ion-item>
+
+      <!-- <div class="header__person">
+          <img src="../../assets/imgs/me.png">
+          <div class="infos">
+              <h2>Luis Quintero</h2>
+              <p>0567894321</p>
+          </div>
+          <ion-icon name="settings" end></ion-icon>  
+      </div> -->
+
+      <div class="montant">
+        <p>Amount Left</p>
+        <h2>8,987.00 MAD</h2>
+      </div>
+  </div>
+
+    <ion-grid class="cards">
+      <ion-row>
+        <ion-col class="card1">
+          <div class="card-content">
+              <h1>5,78.00 USD</h1>
+              <p>PAYBACK AMOUNT</p>
+          </div>
+        </ion-col>
+        <ion-col class="card2">
+          <div class="card-content">
+            
+          <h1>5,78.00 USD</h1>
+          <p>BALANCE</p>
+          </div>
+        </ion-col>
+        <ion-col class="card3">
+          <div class="card-content">
+            
+          <h1>5,78.00 USD</h1>
+          <p>AMOUNT FOUNDED</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <p class="items-head">
+      LAST  OPERATIONS  
+    </p>
+
+    <ion-list class="items">
+
+        <ion-item *ngFor="let card of cards">
+          <ion-icon name="card" item-start></ion-icon>
+          <h2>{{card.title}}</h2>
+          <p>{{card.subtitle}}</p>
+          <div class="montant-droit" item-end>
+            <h2>{{card.price}}</h2>
+            <p>{{card.date}}</p>
+          </div>
+        </ion-item>
+    </ion-list>
+
+
+
+</ion-content>
+
+
+
+
+

@@ -1,0 +1,39 @@
+page-edit {
+
+    .header{
+        position: fixed;
+        width: 100%;
+        display: inline-block;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, #21d2fd, #219aff);
+        background-position: top;
+        height: 10%;
+
+        .title {
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+            
+        }
+    }
+
+    .scroll-content {
+        background-color: rgba(243, 243, 243, 0.692);
+        align-items: center;
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0 !important;
+        padding-top: 10%
+    }
+
+    ion-avatar > img {
+        margin: auto;
+        width: 80px;
+        height: auto;
+    }
+
+
+}

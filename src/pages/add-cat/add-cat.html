@@ -1,0 +1,57 @@
+
+<ion-header class="header">
+
+  <ion-item style="background-color:transparent" no-lines>
+    <ion-label class="title">Add A Category</ion-label>
+    </ion-item>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating >Category Name</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Amount (MAD)...</ion-label>
+      <ion-input type="number" [(ngModel)]="solde"></ion-input>
+    </ion-item>
+
+    
+  
+  </ion-list>
+
+    <br>
+
+    <ion-item no-lines>
+      <ion-label stacked>Sent To (RIB) ...</ion-label>
+      <ion-input type="text"></ion-input>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item no-lines>
+        <ion-label stacked>Receiver Name ...</ion-label>
+        <ion-input type="text"></ion-input>
+        <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item no-lines>
+        <ion-label stacked>Date (JJ/MM/AA)</ion-label>
+        <ion-input type="text"></ion-input>
+        <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+        <ion-checkbox checked="false"></ion-checkbox>
+        <ion-label style="color:#a1a1a1; font-weight: '00">Block Money</ion-label>
+    </ion-item>
+
+    <button ion-button round (click)="goTo2()" class="btn--add">
+      Add
+    </button>
+  
+</ion-content>

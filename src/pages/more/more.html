@@ -1,0 +1,27 @@
+<ion-content>
+
+    <div class="header">
+      <img src="../../assets/imgs/logo.png" alt="Logo">
+    </div>
+
+    <ion-grid class="container">
+        <ion-row>
+          <ion-col (click)="qr()">
+            <img src="../../assets/imgs/qr-code.png" alt="qr-code">
+            <p>QR-Code</p>
+          </ion-col>
+          <ion-col (click)="place()">
+              <img src="../../assets/imgs/place.png" alt="qr-code">
+              <p>MAP</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col (click)="support()">
+                <img src="../../assets/imgs/support.png" alt="qr-code">
+                <p>support</p>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+
+</ion-content>

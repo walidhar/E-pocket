@@ -1,0 +1,104 @@
+page-third {
+  
+    .toolbar-background {
+        background: #fff;
+        border-color: transparent;
+      }
+      #divButton{
+        display: block;
+        text-decoration: none;
+        font: bold 13px Arial;
+        color: black;
+        width: 78px;
+        height: 23px;
+        float: left;
+        display: inline;
+        margin-right: 8px;
+        background-image:url(tabsquare.jpg);
+        background-repeat: no-repeat;
+        padding-top: 4px;
+        text-align:center;
+      }
+      .sliders-page{
+          //height: 100%;
+          //padding-top: 10%;
+          //padding-top: 20%;
+          
+      }
+      .tutorial-page{
+          //width: 70%;
+          //height: 92%;
+          //padding-bottom: 20px;
+      }
+      .slider-page{
+        //padding-bottom: 10%;
+      }
+    
+      .slide-zoom {
+          //padding: 10%;
+        height: 70%;
+      }
+    
+      .slide-title {
+        margin-top: 2.8rem;
+        color: #001C6E;
+        font-weight: bold;
+      }
+    
+      #idTutorial{
+        margin-top: 35%;
+        position: absolute;
+        width: 100%;
+        /* bottom: 100%; */
+        display: inline-block;
+
+        // ion-col{
+        //   position: absolute;
+        //   bottom: 0
+        // }
+      }
+      .slide-image {
+        max-height: 20%;
+        max-width: 30%;
+        //margin:30%;
+        margin: 0 35% -5px 35%;
+        //margin-bottom: -20px;
+      }
+      .ListStyle{
+        margin-top: 15%
+      }
+      .PStyle{
+        //margin-bottom: 30%;
+        margin: 0 -7% 10% -7%;
+      }
+      #ButtonSkip{
+          //padding-top: 20%;
+          padding-left: 5%;
+          padding-right: 5%;
+          //position:relative;
+          
+      }
+      
+      #ContentSlide{
+        position: relative;
+      }
+    
+      b {
+        font-weight: 500;
+      }
+    
+      p {
+        padding: 0 40px;
+        font-size: 12px;
+        line-height: 1.5;
+        // font-family: 'Lato';
+        color: #60646B;
+        position: relative;
+        top: 10%;
+    
+        b {
+          color: #000000;
+        }
+      }
+    
+}

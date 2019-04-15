@@ -1,0 +1,29 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/imgs/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+
+<ion-content>
+
+  <ion-slides class="slides"  pager>
+    <div *ngFor="let slide of slides">
+      <ion-slide>
+        <div padding>
+          <img [src]="slide.image" id="vector">
+          <h3 text-center>{{slide.title}}</h3>
+          <p>{{slide.text}}</p>
+        </div>
+      </ion-slide>
+    </div>
+  </ion-slides>
+
+
+
+    <div text-center >
+      <button ion-button round  text-center (click)="open()">Skip</button>
+    </div>
+</ion-content>

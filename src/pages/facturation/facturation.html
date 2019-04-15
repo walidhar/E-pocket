@@ -1,0 +1,53 @@
+<div class="header">
+  <ion-item style="background-color:transparent" no-lines>
+      <ion-label class="title" text-center>Bill</ion-label>
+  </ion-item>
+</div>
+
+<ion-content class="cards-bg">
+
+<ion-card class="adv-map">
+  <div style="position: relative">
+    <h1 id="facture">Bill</h1>
+    <img class="imageFacturation" src="../../assets/carrefour.png">
+  </div>
+  <ion-item>
+    <ion-icon color="subtle" large item-start color="blueCiel" name='ios-basket-outline'></ion-icon>
+    <span class="spanShopping">Vegetables ×3</span>
+    <p class="P_style">19 DH</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon color="subtle" large item-start color="blueCiel" name='ios-basket-outline'></ion-icon>
+    <span class="spanShopping">Biscuits ×10 </span>
+    <p class="P_style">69 DH</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon color="subtle" large item-start color="blueCiel" name='ios-basket-outline'></ion-icon>
+    <span class="spanShopping">Fruits --Banana ×1</span>
+    <p class="P_style">150 DH</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon color="subtle" large item-start color="blueCiel" name='ios-basket-outline'></ion-icon>
+    <span class="spanShopping">Bread ×3</span>
+    <p class="P_style">20 DH</p>
+  </ion-item>
+  <ion-item actions class="itemButtom">
+    <span ion-text item-start color="blueCiel" class="item-bold">258 </span>
+    <span ion-text item-start color="blueCiel">MAD</span>
+    <button ion-button color="primary" clear item-end icon-start>
+      <ion-icon name='card'></ion-icon>
+      <span id="prendreButton" (click)="done()">Pay</span> 
+    </button>
+  </ion-item>
+
+</ion-card>
+<!--<ion-card class="adv-map">
+<h3>Optionnelle</h3>
+<h4>{{dataTrans.cancelled}}</h4>
+<h4>{{dataTrans.format}}</h4>
+<h4>{{dataTrans.text}}</h4>
+  
+</ion-card>
+-->
+
+</ion-content>

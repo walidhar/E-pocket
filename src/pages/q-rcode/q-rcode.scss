@@ -1,0 +1,53 @@
+page-q-rcode {
+    // .toolbar-background-md{
+    //     background-image: url('../assets/backroundTitle.png');
+    //     background-size: cover;
+    //     //background-color: aquamarine;
+    // }
+    // .header{
+    //     height: 100px;
+    // }
+    // .Span_title{
+    //     color: #fff;
+    //     font-family: 'Lato';
+    //     font-size: 24px;
+    //     font-weight: bold;
+
+    // }
+
+    .header{
+        position: fixed;
+        width: 100%;
+        display: inline-block;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, #21d2fd, #219aff);
+        background-position: top;
+        height: 10%;
+
+        .title {
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+            
+        }
+    }
+
+    .Icon_title{
+        float: right;
+    }
+    #Style_img{
+        width: 170px;
+        margin: 25% 35% 25% 25%;
+    }
+    #iconScan{
+        font-size: 241px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.2;
+        color: #219aff
+    }
+}

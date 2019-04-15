@@ -1,0 +1,176 @@
+page-questionnaire {
+    .body {
+        font-family: 'Lato',sans-serif;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        background-image: radial-gradient(#051B23, shade(#051B23, 25));
+      }
+      
+      
+      .icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        fill: none;
+      }
+      
+      .hidden {
+        display: none;
+      }
+      
+      .progress {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        margin: 0 0 0 10%;
+      }
+      
+      .step {
+        flex-grow: 1;
+        position: relative;
+      }
+      
+      .step-progress {
+        width: 100%;
+        height: 0.25em;
+        background: #2197FF;
+      }
+      
+      .icon-wrapper {
+        text-align: center;
+        display: inline-block;
+      }
+      
+      .step.done .step-progress:after {
+        position: absolute;
+        content: '';
+        height: 0.25em;
+        width: 0;
+        background-color: #0087B3;
+        -webkit-animation: growLine 1s linear forwards;
+                animation: growLine 1s linear forwards;
+      }
+      
+      .icon-checkmark {
+        position: absolute;
+        top: -0.55em;
+        left: -0.125em;
+        border: 0.125em solid #2197FF;
+        background: rgb(255, 255, 255);
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        padding: 0.125em;
+        border-radius: 50%;
+        transition: all 0.25s linear;
+      }
+      
+      .step.done .icon-checkmark {
+        background: #0087B3;
+        border-color: #0087B3;
+      }
+      
+      .icon-checkmark .path1 {
+        stroke: #aaa;
+        stroke-width: 4;
+        stroke-linecap: square;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        fill: empty;
+      }
+      
+      .step.done .icon-checkmark .path1 {
+        -webkit-animation: dash 5s linear forwards;
+                animation: dash 5s linear forwards;
+        stroke: #2197FF;
+      }
+      
+      .step-text {
+        position: relative;
+        margin-left: -50%;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #aaa;
+        margin-top: 0;
+        opacity: 0;
+      }
+      
+      .step.done .step-text {
+        color: #0087B3;
+        -webkit-animation: dropText 0.5s linear forwards;
+                animation: dropText 0.5s linear forwards;
+      }
+      
+      @-webkit-keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @-webkit-keyframes growLine {
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes growLine {
+        to {
+          width: 100%;
+        }
+      }
+      @-webkit-keyframes dropText {
+        to {
+          padding-top: 1em;
+          opacity: 1;
+        }
+      }
+      @keyframes dropText {
+        to {
+          padding-top: 1em;
+          opacity: 1;
+        }
+      }
+      
+
+      .Progress-Style{
+        margin: 4% 0 4% 0;
+        padding: 5% 0 5% 0;
+      }
+      .Ques-Style{
+        margin: 12% 0 12% 0;
+        padding: 0 2% 0 7%;
+      }
+      .Label-Style{
+        font-family: 'Lato-Regular',sans-serif;
+        font-size: 16px;
+        color: #4E4E4E;
+        
+      }
+      .Radio-Style{
+        float: left;
+      }
+      .title{
+        font-family: 'Lato',sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #001C6E;
+        padding : 12% 0 2% 2%;
+        
+      }
+      .Button-Style{
+        text-transform: capitalize;
+        font-family: 'Lato-Regular',sans-serif;
+        font-size: 16px;
+        // padding: 22px 40px 22px 40px;
+        // margin: 19% 0 0 5%;
+      }
+}
